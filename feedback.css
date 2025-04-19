@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.feedbackbody {
+
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(pic/feedback_2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bodyfeedbackcontainer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px);/* 保留 footer 空间 */
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Feedback Container */
+.feedback-container {
+    background: #989ba6;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.feedback-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #f7a765;
+}
+
+label {
+    display: flex;
+    margin: 10px 0 5px;
+    font-weight: 500;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.inputbox input {
+    position: relative;
+    width: 100%;
+    padding: 12px 10px;
+    /* Adjusted padding */
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+    border-bottom: 2px solid #605c77;
+    /* Ensure visible bottom border */
+}
+
+/* Default state for Name/Email input (same as Password) */
+.inputbox input[type="text"] {
+    color: #8f8f8f;
+}
+
+/* When focused, Name/Email should behave like Username */
+.inputbox input:focus,
+.inputbox input:valid {
+    color: #ffffff;
+}
+
+/* Adjust span positioning */
+.inputbox span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #ffffff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+/* Move label up when input is active */
+.inputbox input:focus~span,
+.inputbox input:valid~span {
+    top: 0;
+    transform: translateY(-100%);
+    font-size: 0.75em;
+    color: #3d3d3d;
+}
+
+.inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #989ba6;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+/* Highlight effect when input is active */
+.inputbox input:focus~i,
+.inputbox input:valid~i {
+    height: 2px;
+    background: #ffffff;
+}
+
+/* Star Rating */
+.stars {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.stars i {
+    font-size: 25px;
+    cursor: pointer;
+    color: #bbb;
+    transition: color 0.3s;
+    margin: 0 5px;
+}
+
+.stars i:hover,
+.stars i.active {
+    color: #f4d03f;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #46494b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #c6c6c6;
+}
+
+.thank-you-container {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 20px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.thank-you-container h2 {
+    font-size: 24px;
+    color: black;
+}
+
+.thank-you-container p {
+    font-size: 18px;
+}
+
+.home-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #46494b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.home-btn:hover {
+    background: #c6c6c6;
+}
+
+.copyri {
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+}
+
+.copyri p {
+    color: aliceblue;
+}

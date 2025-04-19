@@ -1,0 +1,278 @@
+
+  /* Header Section */
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header-text {
+    position: relative;
+}
+
+  .header-text h1 {
+    margin-top:20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .header-text a {
+    margin-top:20px;
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    top: 20px; 
+    margin-left: 20px;
+    color: purple;
+    text-decoration: none;
+    font-size: 16px;
+}
+  
+  .header-text p {
+    font-size: 1rem;
+    color: #666;
+    margin: 10px 0;
+  }
+
+  /* Make the header image responsive */
+  .header-img {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  /* About Section Layout */
+.description {
+    display: flex;  /* Use Flexbox */
+    align-items: center;  /* Vertically center items */
+    justify-content: space-between;  /* Space between the text and image */
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .des-text {
+    flex: 1;  /* Takes remaining space */
+    padding: 20px;
+  }
+  
+  .des-text h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .des-text p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+
+  /* Image Styling */
+  .des-img {
+    flex: 1;  /* Takes remaining space */
+    padding: 20px;
+  }
+  
+  .des-img img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;  /* Ensures the image fits well */
+  }
+
+  /*<!-- About Section with swapped image and text -->*/
+
+  .des2-text {
+    flex: 1;  /* Take remaining space */
+    padding: 20px;
+  }
+  
+  .des2-text h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .des2-text p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+  
+  /* Image Styling */
+  .des2-img {
+    flex: 1;  /* Take remaining space */
+    padding: 20px;
+  }
+  
+  .des2-img img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;  /* Ensure the image fits well */
+  }
+  
+
+/* Swiper Container */
+.swiper-container {
+  width: 50%;
+  height: 400px; /* Set a fixed height for the swiper */
+  position: relative;
+  overflow: hidden; /* Ensure content doesn't overflow outside the container */
+}
+
+/* Swiper Slide */
+.swiper-slide {
+  width: 100%; /* Ensure the slide takes up the full container */
+  height: 100%; /* Make the slide the same height as the container */
+}
+
+/* Swiper Image */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Ensures the image covers the space properly while keeping its aspect ratio */
+}
+
+.swipe-text {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-style: italic;
+  z-index: 10;
+  animation: fadeInSwipe 1.5s ease;
+}
+
+@keyframes fadeInSwipe {
+  from {
+      opacity: 0;
+      transform: translateY(-5px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Pagination */
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+
+/* Responsive Styles */
+  @media (max-width: 768px) {
+    .header-text h1 {
+      font-size: 1.5rem;
+    }
+  
+    .header-text p {
+      font-size: 0.9rem;
+    }
+  
+    .section h2 {
+      font-size: 1.25rem;
+    }
+  
+    .section p {
+      font-size: 0.9rem;
+    }
+  }
+  
+/* Responsive Design  */
+@media (max-width: 1024px) {
+  .description {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .des-img,
+  .des-text,
+  .des2-img,
+  .des2-text {
+    padding: 10px;
+  }
+
+  .swiper-container {
+    width: 80%;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .header-text h1 {
+    margin-top: 40px;
+    font-size: 1.5rem;
+  }
+
+  .header-text a {
+    margin-bottom: 20px;
+    font-size: 14px;
+    position: static;
+    display: none;
+    margin: 10px auto;
+    font-size: 14px;
+ 
+  }
+
+  .header-text p {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .des-img img,
+  .des2-img img {
+    max-height: 250px;
+  }
+
+  .des-text,
+  .des2-text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .des-text h2,
+  .des2-text h2 {
+    font-size: 1.4rem;
+  }
+
+  .des-text p,
+  .des2-text p {
+    font-size: 0.9rem;
+  }
+
+  .swiper-container {
+    width: 100%;
+    height: 250px;
+  }
+
+  .swipe-text {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+}

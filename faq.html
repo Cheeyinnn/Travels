@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Travel HUB FAQ</title>
+
+  <!-- Favi Icon-->
+  <link rel="icon" type="image/x-icon" href="pic/favicon.png">
+
+  <!-- Link to CSS-->
+  <link rel="stylesheet" href="travelmainstyle.css">
+  <link rel="stylesheet" href="faq.css" />
+
+  <!-- Box Icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+
+<body>
+
+  <!-- Nav Bar-->
+  <header>
+        
+    <a href="travelmain.html" class="logo"><i class='bx bxs-briefcase-alt-2'></i> Travel HUB </a>
+
+    <!-- Menu Icon-->
+    <div class ="bx bx-menu" id="menu-icon"> </div>
+
+    <!-- Nav List-->
+    <ul class ="navbar">
+        <li><a href="index.html">Login</a></li>
+        <li><a href="travelmain.html" class="home-active">Home</a></li>
+        <li><a href="season.html">Destination</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+     </ul>
+
+  </header>
+
+  <div class="box">
+    <h2><i class="fas fa-plane-departure"></i> Travel HUB FAQ</h2>
+
+    <!-- Booking & Payment -->
+    <div class="faq-category">
+      <h3><i class="fas fa-credit-card"></i> Booking & Payment</h3>
+      <div class="faq-item">
+        <strong>How can I book a flight?</strong> <i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">You can book directly through our TravelHUB website or app.</div>
+      </div>
+      <div class="faq-item">
+        <strong>What payment methods are accepted?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">We accept credit/debit cards, PayPal, and travel vouchers.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Can I use promo codes?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Yes! Apply them at checkout for discounts.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Can I pay later?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">We offer 'book now, pay later' for selected flights.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Is there a booking fee?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Some bookings may include a minimal processing fee.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Can I get an invoice?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Yes, invoices are sent automatically after payment.</div>
+      </div>
+      <div class="faq-item">
+        <strong>What if my payment fails?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Retry or contact support to resolve payment issues.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Is my payment information secure?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Absolutely. We use encrypted payment gateways for security.</div>
+      </div>
+    </div>
+
+    <!-- Flights -->
+    <div class="faq-category">
+      <h3><i class="fas fa-plane"></i> Flights</h3>
+      <div class="faq-item">
+        <strong>How do I change my flight?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Login to your account and modify your booking details.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Can I cancel my booking?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Yes, depending on your ticket’s cancellation policy.</div>
+      </div>
+      <div class="faq-item">
+        <strong>What if my flight is delayed?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">You’ll receive alerts and support for rebooking.</div>
+      </div>
+      <div class="faq-item">
+        <strong>How early should I check in?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Check in at least 2 hours before domestic flights.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Can I select my seat?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Yes! Seat selection is available during booking.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Will I get notified about flight changes?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Yes, via email or push notifications from our app.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Are meals provided on board?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Depends on the airline and ticket type.</div>
+      </div>
+      <div class="faq-item">
+        <strong>Can I add extra services?</strong><i class="fas fa-chevron-down"></i>
+        <div class="faq-answer">Yes, you can add baggage, meals, and insurance while booking.</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+
+
+
+<section class = "footer" id="footer">
+  <div class = "footer-box">
+      <a href="travelmain.html" class="logo"><i class='bx bxs-briefcase-alt-2'></i> Travel HUB</a>
+      <br>
+      <h3>Contact Us :</h3>
+      <div class = "social">
+        <a href = "https://www.facebook.com/share/1BrpyEndxb/"><i class='bx bxl-facebook'>Facebook</i></a>
+        <a href = "https://www.instagram.com/travel_hub9?igsh=MWE5eDhuM3YyYndhdw==&utm_source=ig_contact_invite" ><i class='bx bxl-instagram'>Instagram</i></a>
+        <a href = "https://youtube.com/@travelhub-b2h?si=idRhz0qqCzV0JVHt" ><i class='bx bxl-youtube'>Youtube</i></a>
+    </div> 
+  </div>
+      
+  <div class = "footer-box">
+      <h2>Useful Links</h2>
+      <a href = "travelmain.html"> Home </a>
+      <a href = "season.html"> Destination </a>
+      <a href = "blog.html"> Blog </a>
+      <a href = "aboutus.html"> About Us </a>
+      <a href = "faq.html"> FAQ </a>
+      <a href = "feedback.html"> Feedback </a>
+  </div>
+
+  <div class = "footer-box">
+      <h2>Destination</h2>
+      <h5>Choose a favourable season</h5> <br>
+      <a href = "spring.html"> Spring </a>
+      <a href = "summer.html"> Summer </a>
+      <a href = "autumn.html"> Autumn </a>
+      <a href = "winter.html"> Winter </a>
+     
+  </div>
+</section>
+
+  <!-- Copy Right -->
+  <div class = "copyright">
+      <p> &copy;Copyright TravelHub. All Rights Reserved.</p>
+  </div> 
+
+  <!-- Link To JS-->
+  <script src = "main.js"> </script>
+
+</body>
+
+</html>

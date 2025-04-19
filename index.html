@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Travel Hub Login</title>
+
+   <!-- Favi Icon-->
+  <link rel="icon" type="image/x-icon" href="pic/favicon.png">
+
+  <!-- Link to CSS-->
+  <link rel="stylesheet" href="travelmainstyle.css">
+  <link rel="stylesheet" href="login.css">
+
+  <!-- Box Icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <!-- Link Swiper's CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+
+<body class="loginbody">
+
+    
+     <!-- Nav Bar-->
+     <header>
+
+        <a href="travelmain.html" class="logo"><i class='bx bxs-briefcase-alt-2'></i> Travel HUB</a>
+
+
+        <!-- Menu Icon-->
+        <div class ="bx bx-menu" id="menu-icon"> </div>
+
+        <!-- Nav List-->
+        <ul class ="navbar">
+            <li><a href="index.html">Login</a></li>
+            <li><a href="travelmain.html" class="home-active">Home</a></li>
+            <li><a href="season.html">Destination</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+         </ul>
+    </header>
+
+    <div class = "logincontainer">
+        <div class="boxbox">
+            <form action="travelmain.html" class="form" method="get">
+
+                <h1>Travel HUB <br> Login</h1>
+                <br>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1BrpyEndxb/" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/travel_hub9?igsh=MWE5eDhuM3YyYndhdw==&utm_source=ig_contact_invite" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com/@travelhub-b2h?si=idRhz0qqCzV0JVHt" class="icon"><i class="fa-brands fa-youtube"></i></a>    
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="username" id="username" required="required">
+                    <span>Username</span>
+                    <i></i>
+                </div>
+                <div class="inputbox">
+                    <input type="password" name="password" id="pass" required="required">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+                <div class="remember-me">
+                    <label>
+                    <input type="checkbox" id="rememberMe"/>
+                    Remember Me
+                    </label>
+                </div>
+                
+                <button onclick="storeCookie()" class="login-btn" id="loginButton">Login</button>
+
+            </form>
+        </div>
+    </div>
+
+    <section class = "footer" id="footer">
+        <div class = "footer-box">
+            <a href="travelmain.html" class="logo"><i class='bx bxs-briefcase-alt-2'></i> Travel HUB </a>
+            <br>
+            <h3>Contact Us :</h3>
+            <div class = "social">
+                <a href = "https://www.facebook.com/share/1BrpyEndxb/"><i class='bx bxl-facebook'>Facebook</i></a>
+                <a href = "https://www.instagram.com/travel_hub9?igsh=MWE5eDhuM3YyYndhdw==&utm_source=ig_contact_invite" ><i class='bx bxl-instagram'>Instagram</i></a>
+                <a href = "https://youtube.com/@travelhub-b2h?si=idRhz0qqCzV0JVHt" ><i class='bx bxl-youtube'>Youtube</i></a>
+            </div>
+        </div>
+            
+        <div class = "footer-box">
+            <h2>Useful Links</h2>
+            <a href = "travelmain.html"> Home </a>
+            <a href = "season.html"> Destination </a>
+            <a href = "blog.html"> Blog </a>
+            <a href = "aboutus.html"> About Us </a>
+            <a href = "faq.html"> FAQ </a>
+            <a href = "feedback.html"> Feedback </a>
+        </div>
+
+        <div class = "footer-box">
+            <h2>Destination</h2>
+            <h5>Choose a favourable season</h5> <br>
+            <a href = "spring.html"> Spring </a>
+            <a href = "summer.html"> Summer </a>
+            <a href = "autumn.html"> Autumn </a>
+            <a href = "winter.html"> Winter </a>
+        </div>
+
+    </section>
+
+        <!-- Copy Right -->
+        <div class = "copyright">
+            <p> &copy;Copyright TravelHub. All Rights Reserved.</p>
+        </div>
+
+
+    <!-- Link To JS-->
+    <script src = "main.js"> </script>
+    <script src="login.js"></script>
+
+</body>
+
+</html>

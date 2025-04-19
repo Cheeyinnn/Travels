@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .hero-content {
+    z-index: 2;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeScale 1.5s ease-out forwards;
+  opacity: 0;
+  }
+
+  
+
+  @keyframes fadeScale {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .btn:hover {
+    background: white;
+    color: black;
+  }
+
+
+.ourstory-section {
+padding: 80px 20px;
+    background: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .ourstory-content {
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .ourstory-title{
+    margin-bottom: 40px;
+    font-family: georgia, serif;
+    color: orange;
+  }
+  
+  .text-column {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+  }
+  
+  .text-column h2 {
+    font-size: 2.5rem;
+  }
+  
+  .text-column .highlight {
+    color: #f0c330;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .text-column p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.3rem;
+  }
+
+  .ourstory-section hr{
+    margin: 0 auto;
+    margin-bottom: 12px;
+    width: 8%;
+  }
+  
+  .btn-store {
+    display: inline-block;
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .btn-store:hover {
+    background: #f0c330;
+    color: black;
+  }
+  
+  .image-column {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+
+  .mission-vision-section {
+
+    color: #000;
+    text-align: center;
+  }
+  
+
+  .member-section {
+    padding: 20px 20px;
+    background: white;
+    text-align: center;
+    margin-bottom:100px;
+  }
+  
+  .member-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: Georgia, serif;
+    color: orange;
+  }
+  
+  .member-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .member-card {
+    width: 220px;
+    height: 350px; 
+    padding: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .member-card img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover; 
+    border-radius: 4px;
+  }
+  
+
+  .member-card:hover {
+    transform: translateY(-5px);
+  }
+  
+
+  .member-card p {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .social-icon {
+    display: inline-block;
+    margin-top: 12px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icon svg {
+    width: 40px;
+    height: 40px;
+    fill: #E1306C;
+    transition: transform 0.3s, fill 0.3s;
+  }
+  
+  .social-icon:hover svg {
+    transform: scale(1.3);
+    fill: #C13584;
+  }
+
+  .mission-vision-section hr{
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin:  0 auto;
+    margin-bottom: 50px;
+    width: 80%;
+    
+  }
+
+  .mission{
+    margin-bottom: 50px;
+  }
+
+  .mission h2{
+    font-family: Georgia, serif;
+    color: orange;
+  }
+
+  .vision{
+    margin-bottom: 50px;
+    
+  }
+
+  .vision h2{
+    font-family: Georgia, serif;
+    color: orange;
+
+  }
+
+  .member-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+
+  
+
+
+ 
